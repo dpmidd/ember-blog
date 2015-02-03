@@ -1,3 +1,12 @@
-I'm the posts page!
+<h2 class="jumbotron">{{#link-to 'posts.new'}}Make a new blog post!{{/link-to}}</h2>
 
-{{outlet}}
+<section class="half">
+{{#each post in model}}
+  <h2>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</h2>
+  <button {{action 'deletePost' this}}>Delete</button>
+{{/each}}
+</section>
+
+<section class="half">
+  {{outlet}}
+</section>

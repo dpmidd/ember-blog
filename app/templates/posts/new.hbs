@@ -1,0 +1,15 @@
+<section class="create-title">
+  {{textarea placeholder="Add a title!" value=postTitle}}
+  {{postTitle}}
+</section>
+
+<section class="create-post">
+  {{textarea placeholder="Add a post!" value=postCopy}}
+  <button class="savebutton" {{action 'newPost'}}>Save Post</button>
+  <div class="notetext">
+    {{postCopy}}
+  </div>
+</section>
+
+
+{{outlet}}
