@@ -3,7 +3,6 @@
 <section class="half">
 {{#each post in model}}
   <h2>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</h2>
-  <button {{action 'deletePost' this}}>Delete</button>
 {{/each}}
 </section>
 

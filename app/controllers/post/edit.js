@@ -8,7 +8,7 @@ export default Ember.ObjectController.extend({
       post.set('title', title);
       post.set('body', body);
       post.save();
-      
+      this.transitionToRoute('posts');
     }
   }
 });

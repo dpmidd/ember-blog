@@ -2,4 +2,5 @@
   <h2>{{title}}</h2>
   <p>{{body}}</p>
   {{#link-to 'post.edit'}}Edit{{/link-to}}
+  <button {{action 'deletePost' this}}>Delete</button>
 </p>
